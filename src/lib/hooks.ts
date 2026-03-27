@@ -1,6 +1,10 @@
 import { useEffect, useState, useRef } from "react";
 
-export function useIntersectionObserver(options = {}) {
+interface IntersectionObserverOptions extends IntersectionObserverInit {
+  triggerOnce?: boolean;
+}
+
+export function useIntersectionObserver(options: IntersectionObserverOptions = {}) {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const targetRef = useRef(null);
 
