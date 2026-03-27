@@ -1,0 +1,135 @@
+.useCases {
+  background-color: var(--bg-dark);
+}
+
+.headline {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.tabsContainer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tabsHeader {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-dark);
+  padding-bottom: 1rem;
+}
+
+.tabButton {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: all 0.2s ease;
+  border-radius: 8px;
+}
+
+.tabButton:hover {
+  color: var(--text-on-dark);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.activeTab {
+  color: var(--text-on-dark);
+  background-color: var(--accent);
+}
+
+.activeTab:hover {
+  background-color: var(--accent);
+}
+
+.caseCard {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-dark);
+  border-radius: 16px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.badge {
+  width: fit-content;
+}
+
+.scenario {
+  font-size: 1.25rem;
+  color: var(--text-on-dark);
+  line-height: 1.5;
+}
+
+.codeBlock {
+  background-color: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-dark);
+}
+
+.codeHeader {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem 1rem;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.codeBlock code {
+  display: block;
+  padding: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--accent);
+  line-height: 1.6;
+}
+
+.chatPreview {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.chatAvatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  background-color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.chatBubble {
+  background-color: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: 4px 12px 12px 12px;
+  padding: 1rem;
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .tabsHeader {
+    flex-direction: column;
+  }
+  
+  .caseCard {
+    padding: 1.5rem;
+  }
+}

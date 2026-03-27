@@ -1,0 +1,27 @@
+.card {
+  padding: 2rem;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.dark {
+  background-color: rgba(31, 41, 55, 0.3);
+  border-color: var(--border-dark);
+}
+
+.light {
+  background-color: #fff;
+  border-color: var(--border-light);
+  color: var(--text-on-light);
+}
+
+.hover:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.dark.hover:hover {
+  box-shadow: 0 8px 30px rgba(59, 76, 202, 0.15);
+}

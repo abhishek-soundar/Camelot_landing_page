@@ -1,0 +1,102 @@
+.architecture {
+  position: relative;
+}
+
+.headline {
+  max-width: 800px;
+  margin-bottom: 5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-bottom: 6rem;
+}
+
+.detailCard {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.icon {
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.body {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.diagramWrapper {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-dark);
+  border-radius: 16px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.diagramHeader {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.svg {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.node {
+  fill: rgba(59, 76, 202, 0.1);
+  stroke: var(--border-dark);
+  stroke-width: 1;
+}
+
+.nodeText {
+  fill: var(--text-on-dark);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--font-body);
+}
+
+.path {
+  stroke: var(--border-dark);
+  stroke-width: 2;
+  stroke-dasharray: 8;
+  opacity: 0.3;
+}
+
+.pathAnimate {
+  stroke: var(--accent);
+  stroke-width: 2;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: draw 1.5s ease-out forwards;
+}
+
+@keyframes draw {
+  to { stroke-dashoffset: 0; }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .diagramWrapper {
+    padding: 1.5rem;
+  }
+}
