@@ -13,8 +13,7 @@ import Footer from '../components/Footer';
 
 const Home = () => {
   return (
-    <div className="relative">
-      <Navbar />
+<div className="relative overflow-x-hidden">      <Navbar />
       <HeroSection />
       <CommandPreview />
       <FeaturesSection />
