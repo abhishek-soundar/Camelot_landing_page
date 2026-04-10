@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 px-4 md:px-[7.6923%] py-4">
+    <nav className="px-4 md:px-[7.6923%] py-4">
       <div className="glass-container px-4 md:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2 md:gap-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>

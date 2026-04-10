@@ -18,7 +18,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center pt-32 pb-20 px-4 md:px-8 lg:px-[7.6923%] relative">
+    <section className="min-h-screen flex items-center justify-center py-20 px-4 md:px-8 lg:px-[7.6923%] relative">
       {/* Orange Glow Arc */}
       <div className="orange-arc"></div>
       
