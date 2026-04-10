@@ -115,12 +115,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-6 md:pt-8 border-t border-[rgba(255,255,255,0.1)] flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
-          <p className="text-xs md:text-sm text-[rgba(255,255,255,0.6)] text-center md:text-left">
+        <div className="pt-6 md:pt-8 border-t border-[rgba(255,255,255,0.1)] flex items-center justify-center">
+          <p className="text-xs md:text-sm text-[rgba(255,255,255,0.6)] text-center">
             © {currentYear} Camelot. All rights reserved.
-          </p>
-          <p className="text-xs md:text-sm text-[rgba(255,255,255,0.6)] text-center md:text-right">
-            Built with ❤️ for the future of work
           </p>
         </div>
       </div>

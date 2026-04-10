@@ -51,9 +51,9 @@ const TransformationSection = () => {
 
             {/* New Way */}
             <div className="glass-container-strong p-6 md:p-10 border-orange-500/30 relative">
-              {/* Arrow - better positioned */}
-              <div className="absolute -top-8 left-1/2 -translate-x-1/2 lg:-left-8 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-0">
-                <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-[rgba(255,122,0,0.1)] rounded-full">
+              {/* Arrow - centered between cards with gap */}
+              <div className="absolute -top-10 left-1/2 -translate-x-1/2 lg:-left-12 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-0">
+                <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-[rgba(255,122,0,0.15)] rounded-full backdrop-blur-sm border border-orange-500/30">
                   <ArrowRight className="w-6 h-6 md:w-7 md:h-7 text-orange-500 rotate-90 lg:rotate-0" />
                 </div>
               </div>
