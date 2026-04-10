@@ -18,19 +18,19 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center pt-32 pb-20 px-[7.6923%] relative">
+    <section className="min-h-screen flex items-center justify-center pt-32 pb-20 px-4 md:px-8 lg:px-[7.6923%] relative">
       {/* Orange Glow Arc */}
       <div className="orange-arc"></div>
       
-      <div className="glass-container-strong max-w-[1400px] w-full p-12 md:p-16 relative z-10">
+      <div className="glass-container-strong max-w-[1400px] w-full p-6 md:p-12 lg:p-16 relative z-10">
         <div className="flex flex-col items-center text-center">
           
           {/* Content */}
           <div className="max-w-[900px]">
-            <h1 className="display-huge mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-[66px] font-semibold leading-tight mb-4 md:mb-6">
               One interface to control your entire business
             </h1>
-            <p className="body-large mb-10 text-[rgba(255,255,255,0.85)] max-w-[700px] mx-auto">
+            <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 text-[rgba(255,255,255,0.85)] max-w-[700px] mx-auto">
               Execute workflows across CRM, accounting, and support using plain language
             </p>
             <button onClick={scrollToPricing} className="btn-primary">
