@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sparkles, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -17,9 +17,11 @@ const Navbar = () => {
       <div className="glass-container px-4 md:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2 md:gap-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <div className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center bg-gradient-to-br from-orange-500 to-orange-600 border-radius-0">
-            <Sparkles className="w-5 h-5 md:w-6 md:h-6 text-black" />
-          </div>
+          <img 
+            src="/camelot-logo.png" 
+            alt="Camelot Logo" 
+            className="w-8 h-8 md:w-10 md:h-10 object-contain"
+          />
           <span className="text-xl md:text-2xl font-bold text-white">Camelot</span>
         </div>
 
