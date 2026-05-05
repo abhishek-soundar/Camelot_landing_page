@@ -114,7 +114,7 @@ const Footer = () => {
 
         </div>
 
-        {/* Bottom Bar */}
+        {/* Bottom Bar  Legal Representation*/}
         <div className="pt-6 md:pt-8 border-t border-[rgba(255,255,255,0.1)] flex items-center justify-center">
           <p className="text-xs md:text-sm text-[rgba(255,255,255,0.6)] text-center">
             © {currentYear} Camelot. All rights reserved.
